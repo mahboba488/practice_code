@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+canvas {
+    position: absolute;
+    background:white;
+}
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.generate-tree-button {
+    position: absolute;
+    left:0;
+    z-index: 10;
+    cursor: pointer;
+    bottom: 5%; 
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 20px 30px;
+    border-radius: 50px;
+    background: brown;
+
+    color: white;
+    font-family: 'Helvetica', cursive;
+    font-size: 20px;
+    overflow: hidden;
+}

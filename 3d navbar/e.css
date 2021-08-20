@@ -1,0 +1,66 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body{background:url(6.jfif) ;
+        background-size: cover;
+        
+    }
+
+.container{
+    width: 60%;
+    height:600px;
+    margin: 100px 0  0 400px;
+    
+    background-image:url(9.jfif);
+    background-size: cover;
+    transform: perspective(900px) rotateY(10deg)  translateY(10px);
+    
+    box-shadow: -20px 10px 30px 3px rgba(8, 8, 8,.8);
+    position: relative;
+}    
+.list{
+    width: 290px;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    
+    
+}
+.list ul{
+    margin-top: 50px;
+    list-style: none;
+   
+    
+}
+.list ul li{
+    padding: 10px;
+    margin-left: 20px;
+}
+.list ul a{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(240, 45, 45);
+}
+.list ul li:hover{
+    background: linear-gradient(45deg,rgba(0, 0, 0,.4) 70%, rgba(225, 225, 225,.4) 20%)  ;
+    margin-left: 0;
+    font-size: 35px;
+    padding: 5px;
+   
+     
+}
+.list ul a:hover{
+    color: aqua;
+    
+}
+.imagess{
+    position: absolute;
+    left:290px;
+    width: 630px;
+    height: 100%;
+    
+}
+.imagess .phooto{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+

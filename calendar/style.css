@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: linear-gradient(yellow,red);
+    border-radius: 50%;
+    transform: translate(-250px,-120px);
+}
+
+section::after{
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    background: linear-gradient(rgb(0, 132, 255),rgb(0, 255, 76));
+    border-radius: 50%;
+    transform: translate(250px,130px);
+}
+.box{
+    position: relative;
+    z-index: 1000;
+}
+.container{
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background:rgba(255, 255, 255, 0.1);
+    box-shadow:0 25px 45px rgba(0, 0, 0, 0.1);
+    border:1px solid rgba(255, 255, 255, 0.5);
+    border-right:1px solid rgba(255, 255, 255, 0.2);
+    border-bottom:1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dycalendar{
+    width: 100%;
+    padding: 20px;
+}
+#dycalendar table{
+    width: 100%;
+    margin-top: 40px;
+    border-spacing: 5px;
+}
+
+#dycalendar table tr:nth-child(1) td{
+    background: white;
+    color:black;
+    border-radius: 4px;
+    font-size: 600;
+}
+
+#dycalendar table td{
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#dycalendar table td:hover{
+
+    background: white;
+    color: black !important;
+
+}
+.dycalendar-month-container .dycalendar-today-date,
+.dycalendar-month-container .dycalendar-target-date
+{
+    background: white;
+    color: black !important;
+}
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn{
+    background: white;
+    color: black;
+    width: 44px;
+    height: 38px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    
+}
+.dycalendar-month-container .dycalendar-span-month-year{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 400;
+
+}
